@@ -21,10 +21,10 @@ scatter(hist_osc.Var2, hist_osc.Var3);
 plot(hist_approx.Var1, hist_approx.Var2, 'LineWidth', 2);
 grid on
 
-title('v_c(t) \times i_{sx}(t)', 'FontSize', 18)
-xlabel('i_{sx} [A]', 'FontSize', 16);
-ylabel('v_c(t) [V]','FontSize', 16);
-legend('Dados do oscilosópio', 'Curva aproximada', 'FontSize', 16);
+title('v_c \times i_{sx}', 'FontSize', 32)
+xlabel('i_{sx} [A]', 'FontSize', 26);
+ylabel('v_c [V]','FontSize', 26);
+legend('Dados do oscilosópio', 'Curva aproximada', 'FontSize', 10);
 
 ax = gca;
 ax.FontSize = 14;
@@ -35,9 +35,9 @@ hold on
 plot(H,B, 'LineWidth', 2);
 grid on
 
-title('B(t) \times H(t)', 'FontSize', 18)
-xlabel('B [T]', 'FontSize', 16);
-ylabel('H [A/m]', 'FontSize', 16);
+title('B \times H', 'FontSize', 32)
+xlabel('B [T]', 'FontSize', 26);
+ylabel('H [A/m]', 'FontSize', 26);
 
 ax = gca;
 ax.FontSize = 14;

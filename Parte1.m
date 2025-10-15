@@ -37,33 +37,31 @@ I_X = [
     0.47
     0.58];
 
-
 k1 = 3.811e-3;
 k2 = 4.059e2;
 
 B_m = V_H*k1;
 H_m = I_X*k2;
 
+% ------------------------------
+% FIGURA 1 - Já existente
+% ------------------------------
 figure(1);
 subplot(121);
 plot(I_X, V_H);
-title('V_H \times I_X', 'FontSize', 18);
-xlabel('I_X [A]', 'FontSize', 16);
-ylabel('V_H [V]', 'FontSize', 16);
+title('V_H \times I_X', 'FontSize', 32);
+xlabel('I_X [A]', 'FontSize', 26);
+ylabel('V_H [V]', 'FontSize', 26);
 grid on
-
-ax = gca;
-ax.FontSize = 14;
+ax = gca; ax.FontSize = 14;
 
 subplot(122);
 plot(H_m, B_m);
-title('B_m \times H_m', 'FontSize', 18);
-xlabel('H_m [A/m]', 'FontSize', 16);
-ylabel('B_m [T]', 'FontSize', 16);
+title('B_m \times H_m', 'FontSize', 32);
+xlabel('H_m [A/m]', 'FontSize', 26);
+ylabel('B_m [T]', 'FontSize', 26);
 grid on
-
-ax = gca;
-ax.FontSize = 14;
+ax = gca; ax.FontSize = 14;
 
 display(B_m);
 display(H_m);
