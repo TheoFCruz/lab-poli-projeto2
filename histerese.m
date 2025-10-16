@@ -4,7 +4,7 @@ clc
 hist_osc = readtable('histerese_osciloscopio.csv');
 hist_approx = readtable('histerese_approx.csv');
 
-k3 = 2.87e2;
+k3 = 2.87e4;
 k4 = 1.24;
 
 H = hist_approx.Var1 *k3;
