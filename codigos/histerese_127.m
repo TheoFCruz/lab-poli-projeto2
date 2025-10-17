@@ -1,10 +1,10 @@
 clear
 clc
 
-hist_osc = readtable('histerese_osciloscopio.csv');
-hist_approx = readtable('histerese_approx.csv');
+hist_osc = readtable('histerese_osciloscopio_127.csv');
+hist_approx = readtable('histerese_approx_127.csv');
 
-k3 = 2.87e4;
+k3 = 2.87e2;
 k4 = 1.24;
 
 H = hist_approx.Var1 *k3;
@@ -21,9 +21,9 @@ scatter(hist_osc.Var2, hist_osc.Var3);
 plot(hist_approx.Var1, hist_approx.Var2, 'LineWidth', 2);
 grid on
 
-title('v_c \times i_{sx}', 'FontSize', 32)
-xlabel('i_{sx} [A]', 'FontSize', 26);
-ylabel('v_c [V]','FontSize', 26);
+title('v_c \times i_{sx}', 'FontSize', 18)
+xlabel('i_{sx} [A]', 'FontSize', 16);
+ylabel('v_c [V]','FontSize', 16);
 legend('Dados do oscilosópio', 'Curva aproximada', 'FontSize', 10);
 
 ax = gca;
@@ -35,9 +35,9 @@ hold on
 plot(H,B, 'LineWidth', 2);
 grid on
 
-title('B \times H', 'FontSize', 32)
-xlabel('B [T]', 'FontSize', 26);
-ylabel('H [A/m]', 'FontSize', 26);
+title('B \times H', 'FontSize', 18)
+xlabel('H [A/m]', 'FontSize', 16);
+ylabel('B [T]', 'FontSize', 16);
 
 ax = gca;
 ax.FontSize = 14;
