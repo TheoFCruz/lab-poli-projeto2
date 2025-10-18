@@ -14,6 +14,10 @@ B = hist_approx.Var2*k4;
 area = trapz(H,B);
 display(area);
 
+% --- Valor máximo de B ---
+Bmax = max(B);
+fprintf('B máximo: %.4f T\n', Bmax);
+
 % Plot VxI
 figure(1);
 subplot(121)
